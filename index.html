@@ -6,74 +6,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Școala Gimnazială Nr. 1 Panic</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
-      background: #f4f8ff;
-      color: #333;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('scoala.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #fff;
     }
 
     header {
-      background: #0066cc;
-      color: white;
-      padding: 1em;
+      background-color: rgba(0, 51, 102, 0.85);
+      padding: 1.5em;
       text-align: center;
     }
 
+    header h1 {
+      font-size: 2em;
+    }
+
     nav {
-      background: #004a99;
+      background-color: rgba(0, 102, 204, 0.85);
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
     }
 
     nav a {
       color: white;
-      padding: 1em;
       text-decoration: none;
+      padding: 1em;
+      font-weight: bold;
     }
 
     nav a:hover {
-      background: #003366;
+      background-color: rgba(0, 51, 102, 0.85);
     }
 
     section {
+      background-color: rgba(255, 255, 255, 0.95);
+      color: #000;
+      margin: 2em auto;
       padding: 2em;
-      max-width: 900px;
-      margin: auto;
+      max-width: 850px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
 
     footer {
+      background-color: rgba(0, 51, 102, 0.85);
+      color: white;
       text-align: center;
       padding: 1em;
-      background: #004a99;
-      color: white;
     }
 
-    h2 {
-      color: #0066cc;
+    ul {
+      padding-left: 1.2em;
     }
 
-    .prof-list li {
-      margin-bottom: 0.5em;
-    }
-
-    input, textarea {
+    form input, form textarea {
       width: 100%;
-      padding: 0.5em;
+      margin-top: 0.5em;
       margin-bottom: 1em;
+      padding: 0.7em;
       border: 1px solid #ccc;
+      border-radius: 6px;
     }
 
-    button {
-      padding: 0.7em 1.2em;
-      background: #0066cc;
-      border: none;
+    form button {
+      background-color: #0066cc;
       color: white;
+      border: none;
+      padding: 0.7em 1.5em;
+      border-radius: 6px;
       cursor: pointer;
     }
 
-    button:hover {
-      background: #005bb5;
+    form button:hover {
+      background-color: #004a99;
     }
   </style>
 </head>
@@ -87,23 +103,24 @@
     <a href="#acasa">Acasă</a>
     <a href="#despre">Despre</a>
     <a href="#profesori">Profesori</a>
+    <a href="orar-direct.html">Orar</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section id="acasa">
     <h2>Bine ați venit!</h2>
-    <p>Bine ați venit pe site-ul oficial al Școlii Gimnaziale Nr. 1 Panic. Ne bucurăm că sunteți aici!</p>
+    <p>Acesta este site-ul oficial al Școlii Gimnaziale Nr. 1 Panic. Vă mulțumim că ne vizitați!</p>
   </section>
 
   <section id="despre">
     <h2>Despre școală</h2>
-    <p>Școala noastră are o tradiție educațională de excelență, unde fiecare elev contează. Punem accent pe respect, performanță și dezvoltare personală.</p>
+    <p>Scopul școlii noastre este să sprijine fiecare elev în dobândirea cunoștințelor, dezvoltarea personalității și construirea unei vieți de succes. Instituția oferă un mediu incluziv și motivant pentru toți copiii.</p>
   </section>
 
   <section id="profesori">
     <h2>Profesori</h2>
-    <ul class="prof-list">
-      <li>Prof. Ana Pop – Limba și literatura română</li>
+    <ul>
+      <li>Prof. Ana Pop – Limba română</li>
       <li>Prof. Ion Mureșan – Matematică</li>
       <li>Prof. Maria Ionescu – Istorie</li>
       <li>Prof. Andrei Pavel – Educație fizică</li>
@@ -112,7 +129,7 @@
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Adresa: Str. Principală, nr. 1, Panic, jud. Sălaj</p>
+    <p>Adresă: Str. Principală, nr. 1, Panic, jud. Sălaj</p>
     <p>Email: scoala.panic@example.com</p>
     <form>
       <input type="text" placeholder="Numele dvs" required />
